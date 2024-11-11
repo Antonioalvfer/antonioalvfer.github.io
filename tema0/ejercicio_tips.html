@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio Tips</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        .tip-section {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .tip-section summary {
+            font-size: 1.2em;
+            padding: 15px;
+            cursor: pointer;
+            background-color: #0073e6;
+            color: #fff;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+        }
+
+        .tip-section details {
+            padding: 15px;
+            color: #333;
+        }
+
+        .tip-section img {
+            display: block;
+            margin: 10px auto;
+            border-radius: 4px;
+        }
+
+        a {
+            color: #0073e6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tips para HTML</h1>
+
+    <div class="tip-section">
+        <details>
+            <summary>1. Atributo <code>loading="lazy"</code></summary>
+            <div>
+                <p>Puede utilizar el atributo <code>loading="lazy"</code> para diferir la carga de la imagen hasta que
+                    el usuario se desplace hasta ella.</p>
+                <img src="html.png" loading="lazy" height="200" width="200" alt="HTML Tip" />
+            </div>
+        </details>
+    </div>
+
+    <div class="tip-section">
+        <details>
+            <summary>2. Enlaces de email, llamada y SMS</summary>
+            <div>
+                <p>Podemos usar enlaces especiales para que el usuario envíe un correo, haga una llamada o envíe un
+                    mensaje de texto directamente.</p>
+                <p><a href="mailto:example@example.com?subject=Consulta&body=Escribe aquí tu mensaje">Enviar un
+                        correo</a></p>
+                <p><a href="tel:+123456789">Llámanos</a></p>
+                <p><a href="sms:+123456789?body=Hola">Envía un mensaje de texto</a></p>
+            </div>
+        </details>
+    </div>
+
+    <div class="tip-section">
+        <details>
+            <summary>3. Listas ordenadas con el atributo <code>start</code></summary>
+            <div>
+                <p>El atributo <code>start</code> permite cambiar el punto de inicio de una lista ordenada.</p>
+                <ol start="11">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Go</li>
+                </ol>
+            </div>
+        </details>
+    </div>
+</body>
+
+</html>
