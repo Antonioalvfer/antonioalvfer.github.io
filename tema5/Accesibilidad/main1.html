@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Usabilidad Web</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+
+<body>
+
+    <!-- Botón para modo de alto contraste -->
+    <button id="toggle-contrast">Modo Alto Contraste</button>
+
+    <!-- Header -->
+    <header>
+        <h1>Mejores Prácticas de Usabilidad Web</h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">Introducción</a></li>
+                <li><a href="#principios">Principios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección 1 -->
+    <section id="intro">
+        <h2>Introducción a la Usabilidad Web</h2>
+        <p>La usabilidad web se enfoca en la facilidad de uso y accesibilidad de los sitios para todos los usuarios.</p>
+        <img src="usabilidad.jpg" alt="Ilustración de una interfaz accesible" />
+    </section>
+
+    <section id="principios">
+        <h2>Principios de un Diseño Usable</h2>
+        <p>Un diseño debe ser intuitivo, claro y accesible para garantizar la mejor experiencia de usuario.</p>
+        <img src="principios.png" alt="Infografía sobre principios de usabilidad" />
+
+        <!-- Tabla Accesible -->
+        <table border="1" aria-describedby="desc-tabla">
+            <caption id="desc-tabla">Principios clave de usabilidad web y su descripción</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Principio</th>
+                    <th scope="col">Descripción</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Claridad</td>
+                    <td>El diseño debe ser fácil de entender y usar.</td>
+                </tr>
+                <tr>
+                    <td>Consistencia</td>
+                    <td>Los elementos deben mantenerse uniformes en todo el sitio.</td>
+                </tr>
+                <tr>
+                    <td>Accesibilidad</td>
+                    <td>El contenido debe ser accesible para todos, incluidos usuarios con discapacidad.</td>
+                </tr>
+                <tr>
+                    <td>Retroalimentación</td>
+                    <td>El sistema debe responder a las acciones del usuario de manera clara.</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Formulario de Contacto -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <form action="#">
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required aria-required="true" />
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required aria-required="true" />
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required aria-required="true"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección de Video Accesible -->
+    <section id="video">
+        <h2>Video sobre Usabilidad Web</h2>
+        <video controls aria-label="Video explicativo sobre usabilidad web">
+            <source src="usabilidad.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Usabilidad Web</p>
+    </footer>
+
+    <script>
+        document.getElementById('toggle-contrast').addEventListener('click', function () {
+            document.body.classList.toggle('high-contrast');
+        });
+    </script>
+
+</body>
+
+</html>
